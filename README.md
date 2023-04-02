@@ -1,0 +1,1 @@
+Example of generating string-based http request and then parsed it
