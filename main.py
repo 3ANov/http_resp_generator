@@ -23,7 +23,7 @@ async def http_parser(http_package: str):
         headers = {}
         while (header_line := package_list.pop(0)) != '':
             name = header_line.split(': ').pop(0)
-            headers[name] = header_line.split(': ').pop(0)
+            headers[name] = header_line.split(': ').pop(1)
         body = package_list.pop(0)
         package = HttpPackage(
             start_line=start_line.split(' '),
